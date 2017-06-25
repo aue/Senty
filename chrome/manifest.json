@@ -14,5 +14,8 @@
   ],
   "web_accessible_resources": [
     "assets/style.css"
-  ]
+  ],
+  "icons": {
+    "256": "icon.png" 
+  }
 }

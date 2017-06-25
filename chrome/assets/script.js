@@ -9,9 +9,6 @@ class Senty {
     this.addListeners();
   }
 
-  /*
-  Listeners
-  */
   addListeners() {
     window.addEventListener('focusin', e => {
       let nodeName = e.target.nodeName.toLowerCase();
@@ -51,7 +48,7 @@ class Senty {
   focusOut() {
     if (!this.meterNode) return;
     // Hide meter
-    //this.meterNode.style.display = 'none';
+    this.meterNode.style.display = 'none';
   }
 
   runAnalysis(input) {
@@ -95,23 +92,13 @@ class Senty {
       <h1>Current Analysis</h1>
       <div class="meter">
         <div class="scale">
-          <span class="score">+7</span>
+          <span class="score">0</span>
         </div>
       </div>
       <h2>Positive Terms</h2>
-      <div class="terms proTerms">
-        <span>excepturi</span>
-        <span>quidem</span>
-        <span>perferendis</span>
-        <span>asperiores</span>
-      </div>
+      <div class="terms proTerms"></div>
       <h2>Negative Terms</h2>
-      <div class="terms conTerms">
-        <span>excepturi</span>
-        <span>quidem</span>
-        <span>perferendis</span>
-        <span>asperiores</span>
-      </div>
+      <div class="terms conTerms"></div>
     </div>`;
 
     this.meterNode = meter;
@@ -119,7 +106,6 @@ class Senty {
 }
 
 function runSenty() {
-  console.log("DOM fully loaded and parsed");
   let senty = new Senty();
   senty.run();
 }
