@@ -1,0 +1,14 @@
+{
+  "name": "senty",
+  "version": "1.0.0",
+  "description": "Instant, offline sentiment analysis for what you type.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sentiment": "^4.0.0"
+  }
+}

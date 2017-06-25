@@ -1,0 +1,48 @@
+* {box-sizing: border-box;}
+
+html, body {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#senty {
+  border: 3px solid #607d8b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+  padding: 0.75em;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  margin: 5px;
+}
+
+h1, h2 {padding: 0; margin: 0;}
+h1 {font-size: 0.85em;}
+h2 {font-size: 0.75em; padding: 0.6em 0;}
+
+.meter {margin: 0.5em 0;}
+.meter .scale {
+  background: linear-gradient(to right, red, #ccc, green);
+  border-radius: 0.25em;
+  padding: 0.25em 10%;
+}
+.meter .scale .score {font-weight: bold; color: #fff; text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);}
+
+.terms {font-size: 0.75em; margin: -1px 0 0.25em -1px; text-align: center;}
+.terms span {
+  display: inline-block;
+  background: #ccc;
+  color: #fff;
+  padding: 0.25em 0.5em;
+  border-radius: 1em;
+  margin: 1px;
+}
+.terms:empty {text-align: center; color: #ccc; margin: 0;}
+.terms:empty:after {content: 'no terms'; font-style: italic;}
+
+.proTerms span {background: green;}
+.conTerms span {background: red;}
